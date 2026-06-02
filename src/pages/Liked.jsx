@@ -5,7 +5,7 @@ const Liked = () => {
   return (
     <div>
       <nav className="navbar">
-        <h1 className="logo">🎬 Justin Mendonsa Movies</h1>
+        <h1 className="logo">🎬 JM Movies</h1>
         <ul className="nav-links">
           <li>
             <Link to="/"> Home </Link>
