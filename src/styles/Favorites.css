@@ -1,0 +1,65 @@
+/* Full Page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 40px;
+  border-bottom: 2px solid #e50914;
+}
+
+/* Logo */
+.logo {
+  color: #f0eded;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #e50914;
+}
+
+/* Favorites Page Content */
+.favorites-container {
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
+}
+
+.favorites-title {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.favorites-text {
+  font-size: 20px;
+  color: #ccc;
+}

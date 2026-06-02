@@ -1,0 +1,93 @@
+/* Page Background */
+.home-container {
+  background-color: #000;
+  min-height: 100vh;
+}
+
+/* Section Titles */
+.section-title {
+  color: white;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Movies Grid */
+.movies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Movie Card */
+.card {
+  width: 220px;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 0, 0, 0.4);
+}
+
+/* Movie Poster */
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Movie Trailer */
+.card iframe {
+  width: 100%;
+  height: 320px;
+  border: none;
+}
+
+/* Movie Title */
+.card h3 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Buttons */
+.buttons button,
+.card > button {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover,
+.card > button:hover {
+  background: #ff1f1f;
+}
+
+/* Trailer Button */
+.card > button {
+  display: block;
+  width: 90%;
+  margin: 10px auto 15px;
+}

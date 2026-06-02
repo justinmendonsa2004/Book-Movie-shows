@@ -1,4 +1,4 @@
-import "../Styles/cardslides.css";
+import "../styles/cardslides.css";
 import { useRef } from "react";
 
 function MovieSlider({ movies }) {
