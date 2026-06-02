@@ -51,7 +51,7 @@
   border: none;
 }
 
-/* Movie Title */
+/* Movie Title.. */
 .card h3 {
   color: white;
   text-align: center;
@@ -60,7 +60,7 @@
   font-size: 18px;
 }
 
-/* Buttons Container */
+/* Buttons Container... */
 .buttons {
   display: flex;
   justify-content: center;
@@ -68,7 +68,7 @@
   padding: 10px;
 }
 
-/* Buttons */
+/* Buttons.. */
 .buttons button,
 .card > button {
   background: #e50914;
