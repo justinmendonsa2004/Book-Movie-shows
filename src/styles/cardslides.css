@@ -6,10 +6,10 @@
   overflow: hidden;
 }
 
-/* horizontal slider */
+/* horizontal slider... */
 .slider {
   display: flex;
-  gap: 15px;
+  gap: 14px;
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 10px;
