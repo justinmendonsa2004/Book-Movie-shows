@@ -25,7 +25,7 @@
 /* each slide */
 .slide {
   min-width: 380px;
-  height: 530px;
+  height: 525px;
   flex-shrink: 0;
 
   border-radius: 12px;
