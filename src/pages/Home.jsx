@@ -178,7 +178,7 @@ function Home() {
       title: "Bramayugam",
       image:
         "https://m.media-amazon.com/images/M/MV5BNmZkZjQ5YzItOGQ0MC00ZmVlLWIxNjgtYzU2MmYzYjFmZWI2XkEyXkFqcGc@._V1_SX300.jpg",
-      trailer: "https://www.youtube.com/watch?v=SfsWWXQK8pg&t=3s",
+      trailer: "https://www.youtube.com/watch?v=55pzldrBRJM",
     },
     {
       title: "Bhoothakaalam",
