@@ -33,7 +33,7 @@
 
   scroll-snap-align: start; /* KEY for snapping */
 
-  /* 👇 slide-in effect */
+  /* slide-in effect .. */
   opacity: 0;
   transform: translateX(40px);
   animation: slideIn 0.6s forwards;
