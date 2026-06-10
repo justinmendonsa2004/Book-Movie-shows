@@ -46,7 +46,7 @@
   border-radius: 12px;
 }
 
-/* hover zoom.. */
+/* hover zoom... */
 .slider:hover {
   transform: scale(1.08);
   transition: 0.3s ease;
