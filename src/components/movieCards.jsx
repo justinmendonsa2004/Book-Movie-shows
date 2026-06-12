@@ -42,13 +42,31 @@
 
 // export default MovieCard;
 
-import { useState } from "react";
-import "../styles/moviecard.css";
+import { useState, useContext } from "react";
+import { MovieContext } from "../context/MovieContext";
+import "../styles/movieCards.css";
 
 function MovieCard({ movie }) {
   const [liked, setLiked] = useState(false);
   const [favorite, setFavorite] = useState(false);
   const [showTrailer, setShowTrailer] = useState(false);
+
+  const { addLiked, addFavorite, likedMovies, favoriteMovies } =
+    useContext(MovieContext);
+
+  const handleLike = () => {
+    if (!liked) {
+      addLiked(movie);
+    }
+    setLiked(!liked);
+  };
+
+  const handleFavorite = () => {
+    if (!favorite) {
+      addFavorite(movie);
+    }
+    setFavorite(!favorite);
+  };
 
   return (
     <>
@@ -58,11 +76,9 @@ function MovieCard({ movie }) {
         <h3>{movie.title}</h3>
 
         <div className="buttons">
-          <button onClick={() => setLiked(!liked)}>
-            {liked ? "❤️ Liked" : "🤍 Like"}
-          </button>
+          <button onClick={handleLike}>{liked ? "❤️ Liked" : "🤍 Like"}</button>
 
-          <button onClick={() => setFavorite(!favorite)}>
+          <button onClick={handleFavorite}>
             {favorite ? "⭐ Favorite" : "☆ Favorite"}
           </button>
         </div>
@@ -82,10 +98,8 @@ function MovieCard({ movie }) {
               height="500"
               src={movie.trailer.replace("watch?v=", "embed/")}
               title={movie.title}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            />
           </div>
         </div>
       )}

@@ -1,32 +1,32 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { MovieContext } from "../context/MovieContext";
+import Navbar from "../components/Navbar";
 import "../styles/Favorites.css";
 
 const Favorites = () => {
+  const { favoriteMovies } = useContext(MovieContext);
+
   return (
-    <div>
-      <nav className="navbar">
-        <h1 className="logo">🎬 JM Movies</h1>
-
-        <ul className="nav-links">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-
-          <li>
-            <Link to="/favorites">Favorites</Link>
-          </li>
-
-          <li>
-            <Link to="/liked">Liked</Link>
-          </li>
-        </ul>
-      </nav>
+    <>
+      <Navbar />
 
       <div className="favorites-container">
-        <h1 className="favorites-title">⭐ Favorites Page</h1>
-        <p className="favorites-text">Your favorite movies will appear here.</p>
+        <h1 className="favorites-title">⭐ Favorite Movies</h1>
+
+        <div className="movie-list">
+          {favoriteMovies.length === 0 ? (
+            <p>No favorite movies yet.</p>
+          ) : (
+            favoriteMovies.map((movie, index) => (
+              <div className="fav-card" key={index}>
+                <img src={movie.image} alt={movie.title} />
+                <h3>{movie.title}</h3>
+              </div>
+            ))
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
